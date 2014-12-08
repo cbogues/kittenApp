@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+
+		<title>An HTML Page</title>
+
+		<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+		<![endif]-->
+
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+		
+		<script src="js/angular.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/KittiesController.js"></script>
+	</head>
+
+	<body ng-app="adoptionApp">
+
+	<div id="container" ng-controller="TigersController as tigers"> 
+		
+		<div class="left-container">
+		<h1>Kitties for Adoption</h1>
+
+		<div class = "dashed" ng-repeat="tigers in tigers.tigerList">
+		<img src="{{tigers.image}}">	
+
+		<p>My name is {{this.catName}}</p>
+			<h4> I am </h4>
+			<h5> Iam </h5>
+
+			<button class="checkbox" type="text" ng-model="tigers.text"> Adopt?
+			</button>
+
+		<!-- <span class="I am {{t}} -->
+			
+		
+
+			<!-- <h2>My Name is...</h2>
+			<h4>I am...</h4>
+			<h4>I am...</h4>
+
+			{{this.image}} -->
+	<!-- 	<ul>
+				<li ng-repeat="tigers as tigers.adoptTigers">
+				{{ ng-}}
+			
+				</li> -->
+
+
+				
+
+		</div>
+		</div>
+			
+		<div class="right-container">
+		<h1>At their forever homes</h1>
+			
+	</div>	
+		
+
+
+	</body>
+</html>
